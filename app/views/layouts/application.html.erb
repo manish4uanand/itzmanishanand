@@ -9,12 +9,19 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-      <%= render 'layouts/messages' %>
-      <%= yield %>
-    </main>
+    <%= render 'layouts/header' %>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="well">
+            <%= yield %>            
+          </div>
+          <%#= bootstrap_flash %>
+        </div>        
+        <%= render 'layouts/sidebar' %>
+      </div><!--/row-->
+    </div> <!-- /container -->
+    <%= render 'layouts/footer' %>
   </body>
 </html>

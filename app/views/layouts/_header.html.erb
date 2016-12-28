@@ -1,0 +1,18 @@
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Itzmanishanand</a>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><%= link_to "Home", home_index_path  %></li>
+            <li><%= link_to "About", home_about_me_path, :remote => true  %></li>
+            <li><%= link_to "Resume", home_resume_path, :remote => true  %></li>
+            <li><%= link_to "Contact", "#"  %></li>
+          </ul>
+        </div>
+    </div>
+</div>
