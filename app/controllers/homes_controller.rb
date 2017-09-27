@@ -5,6 +5,9 @@ class HomesController < ApplicationController
   def about_me
   end
 
+  def contact
+  end
+  
   # def resume
   # 	# pdf_filename = File.join(Rails.root, "tmp/Resume.pdf")
   # 	# send_file(pdf_filename, :filename => "Resume.pdf", :type => "application/pdf")
@@ -24,6 +27,11 @@ class HomesController < ApplicationController
 
   def faasos_crm
   end
+
+  def faasos_iris
+  end
+
+
 
   def smartdata_mverso
   end
